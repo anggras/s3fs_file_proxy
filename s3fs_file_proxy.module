@@ -24,7 +24,7 @@ function s3fs_file_proxy_init() {
   $public_s3_prefix = 's3://s3fs-public';
   $s3fs_file_path = $public_s3_prefix . $file_path;
 
-  if (!empty( db_query('select fid from {file_managed} where uri = :uri LIMIT 1', array(':uri' => $s3fs_file_path))->fetchField() )) {
+  if ( db_query('select fid from {file_managed} where uri = :uri LIMIT 1', array(':uri' => $s3fs_file_path))->fetchField() ) {
     header("Location: " . file_create_url($s3fs_file_path));
     exit;
   }
