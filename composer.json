@@ -1,0 +1,9 @@
+{
+    "name": "drupal/s3fs_file_proxy",
+    "description": "",
+    "type": "drupal-module",
+    "license": "GPL-2.0+",
+    "require": {
+      "drupal/s3fs": "~3.0"
+    }
+  }
