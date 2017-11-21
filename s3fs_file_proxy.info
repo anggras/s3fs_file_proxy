@@ -1,4 +1,4 @@
 name = S3 File System File Proxy
 description = Intercept certain file requests and redirect to its S3 URI.
 core = 7.x
-dependencies[] = s3fs (3.x)
+dependencies[] = s3fs

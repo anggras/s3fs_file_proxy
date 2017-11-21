@@ -4,6 +4,6 @@
     "type": "drupal-module",
     "license": "GPL-2.0+",
     "require": {
-      "drupal/s3fs": "~3.0"
+      "drupal/s3fs": "dev-7.x-3.x-composerpatch"
     }
   }
